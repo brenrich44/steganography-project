@@ -1,4 +1,3 @@
-
 from bakery import assert_equal
 from dataclasses import dataclass
 from drafter import *
@@ -512,10 +511,9 @@ assert_equal(len(result_page(decrypt_page_result.state).content), 4)
 assert_equal(len(result_page(encrypt_page_result.state).content), 5)
  
   
- set_site_information(
+set_site_information(
     author="Brendan Richards",
     description="Use Steganography to carry a secret message or phrase, to either encode or decode the message from an image file using the least significant bit.",
-    sources="Thanks to the Drafter docs and my study group.",
     sources="Drafter Documentation, Crypto Corgi Project, BlockPy Dashboard",
     planning=["CS1 Final Project Plan.pdf", "CS1 Final Project Design 1.pdf"],
     links=["https://github.com/brenrich44/steganography-project"]
@@ -524,7 +522,5 @@ assert_equal(len(result_page(encrypt_page_result.state).content), 5)
 
 
 start_server(State("", None, "", []))
-
-
 
 
